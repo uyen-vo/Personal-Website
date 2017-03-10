@@ -9,8 +9,8 @@ window.onload = function(){
     	$("#c").html("creative");
     	$("#d").html("developer");
     	if($href == "#about") { $anchor = $anchor1; }
-    	if($href == "#creative") { $anchor = $anchor2; $(this).text("//creative"); }
-    	if($href == "#dev") { $anchor = $anchor3; $(this).text("//developer"); }
+    	if($href == "#creative") { $anchor = $anchor2; $(this).text("//creative"); $('.b1').addClass("blink"); }
+    	if($href == "#dev") { $anchor = $anchor3; $(this).text("//developer"); $('.b2').addClass("blink");}
 
    		$('.maincontent').animate({ scrollTop: $anchor.top }, 'slow');
     	return false;
