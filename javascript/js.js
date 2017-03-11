@@ -44,7 +44,7 @@ window.onload = function(){
             }
         }
 
-   		$('.maincontent').animate({ scrollTop: $anchor.top }, 'slow');
+   		$('.maincontent').animate({ scrollTop: $anchor.top }, 900);
     	return false;
 	});
 
