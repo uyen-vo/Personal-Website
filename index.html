@@ -26,12 +26,11 @@
 
 	#wrapper{
 		height:100vh;
-		min-width: 900px;
 	}
 
 	img{
-		max-height: 100%;
 		max-width: 100%;
+    height: auto;
 	}
 
 	.maincontent{
@@ -95,7 +94,7 @@
 		float:left;
 		height:100vh;
 		border-right: 1px solid black;
-		margin-right:2em;
+		margin-right:3em;
 	}
 
 	nav .nav{
@@ -141,8 +140,8 @@
 		position:relative;
 		float:left;
 		margin-bottom:20px;
-		height:300px;
-		width:300px;
+		max-height:300px;
+		max-width:300px;
 	}
 
 	.status{
@@ -162,6 +161,7 @@
 	.artwork:hover .status{
 		opacity:1;
 	}
+
 	.status h2{
 		color:white;
 		text-align: right;
@@ -179,8 +179,8 @@
 	}
 
 	.center{
-		margin-right:2em;
-		margin-left:2em;
+		margin-right:1em;
+		margin-left:1em;
 	}
 
 
@@ -194,6 +194,7 @@
 		right:20px;
 		display:none;
 	}
+
 	.menu:hover .blink{
 		display:inline-block;
 	}
@@ -209,7 +210,6 @@
 
 	}
 
-
 	.sm{
 		font-size:.9em;
 	}
@@ -218,7 +218,7 @@
 		font-size:120%;
 		text-decoration: none;
 		color:white;
-		padding: 7%;
+		padding: 9px;
 		background-color:black;
 		border-radius:30px;
 	}
@@ -227,9 +227,28 @@
 	ul.social li.github a:hover{ background-color: rgb(64,120,192); }
 	ul.social li.resume a:hover{ background-color: rgb(255,35,2);  }
 
+	#creative{
+		max-width: 1000px;
+	}
 
-	@media (max-width: 1920px){
-		
+	@media (max-width: 1660px){
+		.center{
+			margin-right:0;
+			margin-left:0;
+		}
+
+		#about{
+			margin-bottom:5%;
+		}
+		.artwork{
+			height:280px;
+			width:280px;
+		}
+
+		.right{
+			margin-left:1em;
+			margin-right:100px;
+		}
 		
 	}
 	</style>
@@ -246,7 +265,7 @@
 					<li><a id = "c" class="menu" href="#creative"><h3>//creative <img class="blink" src="images/blink.gif"/></h3></a></li>
 					<li><a id = "d" class="menu" href="#dev"><h3>//developer <img class="blink" src="images/blink.gif"/></h3></a></li>
 				</div>
-				<footer>
+				<footer id="comments">
 					<p>/*</p>
 					<p>&copy; uyenvo</p>
 					<p>+1 (817) 374-0039</p>
@@ -283,17 +302,17 @@
 						<div class="status"> <h2>raindrops</h2><p>colored pencil</p></div>
 					</div>
 
-					<div class="artwork center">
+					<div class="artwork center right">
 						<img src="images/wc_thumb.jpg"/>
 						<div class="status"> <h2>couple</h2><p>watercolor</p></div>
 					</div>
 
 					<div class="artwork">
-						<img src="images/booklet_thumb.jpg"/>
+						<img class="img-responsive" src="images/booklet_thumb.jpg"/>
 						<div class="status"> <h2>travel booklet</h2><p>adobe indesign</p></div>
 					</div>
 					<br />
-					<div class="artwork">
+					<div class="artwork right">
 						<img src="images/stamp_thumb.jpg"/>
 						<div class="status"> <h2>stamp</h2><p>adobe illustrator</p></div>
 					</div>
@@ -303,7 +322,7 @@
 						<div class="status"> <h2>kaleidoscope</h2><p>watercolor</p></div>
 					</div>
 					
-					<div class="artwork">
+					<div class="artwork right">
 						<img src="images/bulb_thumb.jpg"/>
 						<div class="status s168"> <h2>filament</h2><p>adobe illustrator</p></div>
 					</div>
