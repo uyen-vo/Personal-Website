@@ -2,7 +2,6 @@ window.onload = function(){
     var $anchor1 = $('#about').offset();
     var $anchor2 = $('#creative').offset();
     var $anchor3 = $('#dev').offset();
-	
 	$("nav ul").find('a').click(function() {
 		var $href = $(this).attr('href');
     	var $anchor;
