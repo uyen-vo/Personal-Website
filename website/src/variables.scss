@@ -1,2 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine:400i,700|Open+Sans');
+
+$gray: #808080;
 $lg_img: 600px;
 $sm_img: 300px;
+
+@mixin transition($args...){
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

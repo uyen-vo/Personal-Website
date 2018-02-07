@@ -6,6 +6,7 @@ import { GalleryInstaComponent } from './gallery-insta/gallery-insta.component';
 import { BodyTextComponent } from './body-text/body-text.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 const appRoutes: Routes = [
   {
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     GalleryComponent,
     GalleryInstaComponent,
     BodyTextComponent,
-    HomeComponent
+    HomeComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

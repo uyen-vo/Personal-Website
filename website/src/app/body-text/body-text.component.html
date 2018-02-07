@@ -1,5 +1,7 @@
-<div id="body-text-wrapper">
-  <h1>{{title}}</h1>
-  <h2>{{tools}}</h2>
-  <p>{{body}}</p>
+<div (window:resize)="onResize($event)" id="body-text-wrapper">
+  <div id="wrapper">
+    <h1>{{title}}</h1>
+    <h2>{{tools}}</h2>
+    <p>{{body}}</p>
+  </div>
 </div>

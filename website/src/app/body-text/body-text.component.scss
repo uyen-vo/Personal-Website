@@ -1,19 +1,38 @@
+@import '../../variables';
+
 #body-text-wrapper{
-  border:1px solid red;
-  width: 600px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  // border:1px solid red;
+  display: flex;
+  height: 100vh;
+}
+
+#wrapper {
+  width: 60%;
+  min-width: 500px;
+  align-self: center;
 }
 
 h1 {
-
+  font-family: 'Cousine', monospace;
+  font-weight: bold;
+  font-size: 4em;
+  margin:0; padding:0;
+  margin-bottom: 3px;
 }
 
 h2 {
+  font-family: 'Cousine', monospace;
   font-style: italic;
+  font-size: 1em;
+  color: $gray;
+  margin:0; padding:0;
+  margin-bottom: 8px;
+  text-transform: lowercase;
 }
 
 p {
-
+  margin:0; padding:0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  letter-spacing: .05em;
 }

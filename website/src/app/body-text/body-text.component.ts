@@ -14,6 +14,18 @@ export class BodyTextComponent implements OnInit {
   @Input() body: string;
 
   ngOnInit() {
+    this.setSize();
+  }
+
+  setSize() {
+    const w = ((window.innerHeight + 2) / 2) + 200;
+    (<HTMLElement>document.getElementById('body-text-wrapper')).style.marginLeft = w + 'px';
+  }
+
+  onResize(event) {
+    if (window.innerHeight >= 700) {
+      this.setSize();
+    }
   }
 
 }

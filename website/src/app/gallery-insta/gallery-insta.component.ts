@@ -27,7 +27,7 @@ export class GalleryInstaComponent implements OnInit {
   }
 
   setSize() {
-    const w = (window.innerHeight+2) / 2;
+    const w = (window.innerHeight + 2) / 2;
     const insta = document.getElementsByClassName('insta');
     for (let i = 0; i < insta.length; i++) {
       (<HTMLElement>insta[i]).style.width = w / 2 + 'px';
@@ -37,7 +37,7 @@ export class GalleryInstaComponent implements OnInit {
   }
 
   onResize(event){
-    if (window.innerHeight >= 800) {
+    if (window.innerHeight >= 700) {
       this.setSize();
     }
   }
